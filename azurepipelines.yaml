@@ -6,7 +6,7 @@ trigger:
 stages:
   - stage: ansiblepipeline
     jobs:
-      - job: for installing java11
+      - job: java11
         displayName: java is installing
         steps:
           - script: |
