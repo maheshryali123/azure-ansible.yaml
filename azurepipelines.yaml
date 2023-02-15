@@ -1,0 +1,13 @@
+---
+pool: Default
+ 
+trigger:
+  - main
+stages:
+  - stage: ansible-pipeline
+    jobs:
+      - job: for installing java11
+        displayName: java is installing
+        steps:
+          - script: |
+              ansible-playbook -i hosts ansible.yaml
